@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: "Poppins", sans-serif;  
+}
+
+.mascara{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(5deg, rgba(57, 62, 73, 0.597) 15%, rgba(10, 12, 16, 0.226) 50%, rgba(10, 12, 16, 0.568) 85%);
+    position: fixed;
+    top: 0;
+    z-index: -1;
+ }
+
+body{
+    background-image: url("./assents/background.jpg");
+    mask-size: auto;
+}
+
+.button-menu{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+
+button{
+    background-color: #8cea18;
+    width: 90px;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: bold;
+    height:50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+background-color: #D9ff00;
+opacity: 0.8;
+}
+
+p{
+    color: #fbfbfb;
+    font-size: 16px;
+}
+ul{
+    
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px 200px;
+    gap:5px;
+    
+   
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+    border-color: white 2px ;
+    
+}
+
+li{
+    border: 2px solid #c0f728dd;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: #050505de;
+}
+.price-itens{
+   color: #050a00;
+   font-size:20px;
+   font-style:bold;
+   font-weight:600;
+   border-radius:5px;
+   padding: 5px;
+   background-image: linear-gradient(to right, #8cea18, rgb(133, 196, 114), #8cea1888)
+}
+
+
+.price-itens-reduce{
+   color: #070d00;
+   font-size:38px;
+   font-style: bold;
+   font-weight:500;
+   background-image: linear-gradient(to right, #8cea18, rgb(133, 196, 114), #8cea18)
+  
+}
