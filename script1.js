@@ -11,6 +11,7 @@ function formatCurruncy(value) {
 }
 
 function showAll(productArray) {
+    list.classList.remove('centered-card')
     let myli = ''
     const showAllItems = productArray.forEach((product) => {
         myli +=
@@ -27,6 +28,7 @@ function showAll(productArray) {
 }
 
 function showAllMap() {
+    list.classList.remove('centered-card')
     const newprice = menuOptions.map((product) => ({
         ...product,
         price: product.price * 0.9,
@@ -42,7 +44,7 @@ function sumShowIntems() {
     const showTotalItems = menuOptions.reduce((acc, curr) => acc + curr.price, 0)
     const showTotalItemsdesconts = menuOptions.reduce((acc, curr) => acc + curr.price * 0.9, 0)
 
-
+    list.classList.add('centered-card')
     list.innerHTML = `
     <li>
     <p>Valor total:</P>  
@@ -53,9 +55,10 @@ function sumShowIntems() {
     `
 }
 function showFilter(){
-const filterVegan = menuOptions.filter((product) => product.vegan)
-
-showAll(filterVegan)
+    list.classList.remove('centered-card')
+    const filterVegan = menuOptions.filter((product) => product.vegan)
+    
+    showAll(filterVegan)
 }
 
 buttonShowAll.addEventListener("click", () => showAll(menuOptions))
